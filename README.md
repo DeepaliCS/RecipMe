@@ -20,5 +20,5 @@ Recipe News Feed
 Create Shopping List
 
 
-![logo](recipme/RecipMeFiles/logo.jpg)
+![logo](RecipMeFiles/logo.jpg)
 
