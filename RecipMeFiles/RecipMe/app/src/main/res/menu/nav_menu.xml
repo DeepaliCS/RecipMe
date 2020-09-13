@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_add_recipes"
+        android:icon="@drawable/ic_note_add_black_48dp"
+        android:title="Add recipes"/>
+
+    <item android:id="@+id/menu_my_profile"
+        android:icon="@drawable/ic_account_circle_black_48dp"
+        android:title="My Profile"/>
+
+    <item android:id="@+id/menu_my_recipes"
+        android:icon="@drawable/ic_book_black_48dp"
+        android:title="My Recipes"/>
+
+    <item android:id="@+id/menu_sign_out"
+        android:title="Sign Out"/>
+</menu>

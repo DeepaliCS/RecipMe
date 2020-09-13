@@ -1,0 +1,8 @@
+Week 17 - Monday weekly scrum meeting - Most of the front end is done well enough to start implementing back end
+	  Thursday -Connecting to server
+Week 18 - Monday weekly scrum meeting-Firebase VS Putty/SQL 
+	  Thursday -Implementing Firebase - initialisation with the       android studio
+Week 19 - Monday weekly scrum meeting-Login and Create account approaches, authorisation implementation to firebase
+	  Thursday - Achieving Login and create account working reasonably well
+Week 20 - Monday weekly scrum meeting- Create recipe and Profile page ideas and testing
+	  Thursday - Begin profile and create recipe front and back end, include testing

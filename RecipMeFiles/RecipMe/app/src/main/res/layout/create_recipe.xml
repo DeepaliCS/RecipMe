@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/recipe_image"
+                android:layout_width="fill_parent"
+                android:layout_height="140dp"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:src="@drawable/add_btn"
+                android:scaleType="centerCrop" />
+
+            <!--<Button-->
+                <!--android:id="@+id/button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignBottom="@+id/imageView"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:text="Select Image" />-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/imageView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:scaleType="centerCrop" />-->
+
+
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/recipe_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/recipe_image"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:ems="10"
+            android:hint="Dish name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/recipe_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:ems="10"
+            android:hint="Brief Dish Description:"
+            android:inputType="text" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/difficulty_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:text="Difficulty: "
+                android:textSize="14sp" />
+
+
+            <Spinner
+                android:id="@+id/difficulty_spin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/difficulty_text"
+                android:layout_alignBottom="@+id/difficulty_text"
+                android:layout_alignLeft="@+id/difficulty_text"
+                android:layout_alignStart="@+id/difficulty_text"
+                android:layout_marginLeft="68dp"
+                android:layout_marginStart="68dp"
+                android:entries="@array/Difficulty"
+                android:spinnerMode="dropdown" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="3dp">
+
+            <TextView
+                android:id="@+id/prep_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="14dp"
+                android:text="Prep Time:"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/input_prep_mins"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignBaseline="@+id/prep_time"
+                android:layout_alignBottom="@+id/prep_time"
+                android:layout_toEndOf="@+id/prep_time"
+                android:layout_toRightOf="@+id/prep_time"
+                android:ems="2"
+                android:inputType="number"
+                android:padding="3dp" />
+
+
+            <TextView
+                android:id="@+id/prep_mins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/input_prep_mins"
+                android:layout_toRightOf="@+id/input_prep_mins"
+                android:text="mins" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/cook_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:text="Cook Time:" />
+
+            <EditText
+                android:id="@+id/input_cook_mins"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/cook_time"
+                android:layout_toRightOf="@+id/cook_time"
+                android:ems="2"
+                android:inputType="number"
+                android:padding="3dp" />
+            <TextView
+                android:id="@+id/cook_mins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/input_cook_mins"
+                android:layout_toRightOf="@+id/input_cook_mins"
+                android:text="mins" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/ingredients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:text="Ingredients:" />
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/insertIng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:hint="Insert ingredient name"
+                android:paddingLeft="20dp"
+                android:textSize="14sp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/insertIng"
+                android:onClick="addItem"
+                android:src="@drawable/ic_add_circle_outline_black_18dp"
+                android:layout_alignTop="@id/insertIng"
+                android:layout_alignBottom="@+id/insertIng" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ListView
+                android:id="@+id/ingList"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="20dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text="Method:" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/addStep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/insertStep"
+                android:layout_toEndOf="@+id/insertStep"
+                android:layout_toRightOf="@+id/insertStep"
+                android:onClick="stepAdd"
+                android:src="@drawable/ic_add_circle_outline_black_18dp" />
+
+            <EditText
+                android:id="@+id/insertStep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:hint="Insert next step"
+                android:paddingLeft="20dp"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ListView
+                android:id="@+id/stepList"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="20dp" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/create_recipe_btn"
+            android:layout_marginBottom="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="bottom"
+            android:text="Create Recipe"/>
+
+        </RelativeLayout>
+
+
+        <!--<EditText-->
+        <!--android:id="@+id/dishName"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="5dp"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_marginStart="15dp"-->
+        <!--android:ems="10"-->
+        <!--android:background="@android:color/white"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:hint="Title"/>-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/dishDesc"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="12dp"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:layout_marginStart="15dp"-->
+        <!--android:ems="10"-->
+        <!--android:hint="Description:"-->
+        <!--android:inputType="text" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/difficultyText"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginStart="20dp"-->
+        <!--android:text="Difficulty: "-->
+        <!--android:textSize="14sp" />-->
+
+
+        <!--<Spinner-->
+        <!--android:id="@+id/difficultySpin"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBaseline="@+id/difficultyText"-->
+        <!--android:layout_alignBottom="@+id/difficultyText"-->
+        <!--android:layout_alignLeft="@+id/difficultyText"-->
+        <!--android:layout_alignStart="@+id/difficultyText"-->
+        <!--android:layout_marginLeft="68dp"-->
+        <!--android:layout_marginStart="68dp"-->
+        <!--android:entries="@array/Difficulty"-->
+        <!--android:spinnerMode="dropdown" />-->
+
+    </LinearLayout>
+</ScrollView>
