@@ -15,7 +15,7 @@ Google Sign in API
 
 ## Demo 
 View the video to see the pages that were built and the functionality that it beheld
-Video Demo can also be found on Youtube: https://www.youtube.com/watch?v=3Y5iKaLNeDc
+Video Demo can also be found on Youtube: https://bit.ly/3iuutDi
 
 ## Functinality 
 Functionalities include:
