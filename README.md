@@ -18,3 +18,7 @@ Login/Sign up
 Create recipe
 Recipe News Feed
 Create Shopping List
+
+
+![logo](recipme/RecipMeFiles/logo.jpg)
+
