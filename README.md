@@ -1,11 +1,11 @@
 # RecipMe
-![logo](RecipMeFiles/logo.jpg)
-
-This mobile app's purpose is to enable users to socially share recipes with other users (signed up to the app). 
+This mobile app's purpose is to enable users to socially share recipes with other users (signed up to the app).
 If this app were to be deployed, it would be deployed on Android mobile phones first (relative version Android Nougat) as it was created in 2016.
 
-Was created as part of a collaboration project (Agile), more information can be found here: 
+Was created as part of a collaboration project using Android Studio (Agile), more information can be found here: 
 http://Recipme.esy.es
+
+![logo](RecipMeFiles/logo.jpg)
 
 ## Tecnologies used:
 Technologies include:
