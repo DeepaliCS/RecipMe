@@ -1,7 +1,7 @@
 # RecipMe
 ![logo](RecipMeFiles/logo.jpg)
 
-This app's purpose is to enable users to socially share recipes with other users (signed up to the app). 
+This mobile app's purpose is to enable users to socially share recipes with other users (signed up to the app). 
 
 Was created as part of a collaboration project (Agile), more information can be found here: 
 http://Recipme.esy.es
